@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To Do List</h1>
+        <form class="form" autocomplete="off" method="post">
+            <input type="text" placeholder="enter your plan" required name="user_plan" class="form__input" aria-label="enter your plan">
+            <button class="form__btn">Add</button>
+        </form>
+
+        <ul class="todo-list">
+
+        </ul><hr>
+
+        <ul class="checked-list">
+            <h2>Checked plan</h2>
+        </ul><hr>
+
+        <ul class="bookmark-list">
+            <h2>Bookmark plan</h2>
+        </ul>
+
+        <button class="all-btn">
+            All <span class="all-count">0</span>
+        </button>
+        <button class="complate-btn">
+            Complate <span class="complate-count">0</span>
+        </button>
+        <button class="uncomplate-btn">
+            Uncomplate <span class="uncomplate-count">0</span>
+        </button>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

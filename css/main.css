@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(94, 93, 93);
+}
+
+.container{
+    width: 1240px;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+
+h1{
+    font-family: "Arial", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    color: White;
+}
+
+h2{
+    font-family: "Arial", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: White; 
+}
+
+.form{
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form__input{
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border: 1px solid rgba(81, 80, 80, 0.385);
+    border-radius: 5px;
+}
+
+.form__btn{
+    width: 10%;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+.todo-list{
+    margin: 0;
+    padding: 0;
+}
+
+.todo-list__item{
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.bookmark-btn{
+    background-color: blue;
+    padding: 5px;
+    border: none;
+    color: white;
+}
+
+.all-btn, .complate-btn, .uncomplate-btn{
+    background-color: blue;
+    color: white;
+    padding: 6px;
+    margin-top: 30px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.all-count, .complate-count, .uncomplate-count{
+    color: red;
+}
