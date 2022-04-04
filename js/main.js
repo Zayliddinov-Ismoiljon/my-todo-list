@@ -21,12 +21,14 @@ elForm.addEventListener("submit", evt=>{
     const newItem= document.createElement("li");
     const newInput=document.createElement("input");
     const newBookmark= document.createElement("button");
+    const newDeleteBtn=document.createElement("button");
 
     newItem.textContent=elInputValue;
     newItem.setAttribute("class", "todo-list__item");
     newInput.type="checkbox";
     newBookmark.textContent="Bookmark";
-    newBookmark.setAttribute("class", "bookmark-btn")
+    newBookmark.setAttribute("class", "bookmark-btn");
+    newDeleteBtn.textContent="Delete";
 
     arrTodos.push(newItem);
     elAllCount.push(arrTodos.length);
@@ -37,6 +39,7 @@ elForm.addEventListener("submit", evt=>{
 
     newItem.appendChild(newInput);
     newItem.appendChild(newBookmark);
+    newItem.appendChild(newDeleteBtn);
     elList.appendChild(newItem);
 
     elInput.value="";
@@ -50,6 +53,12 @@ elForm.addEventListener("submit", evt=>{
 
     newItem>newBookmark.addEventListener("click", evt=>{
         elBookmarkList.appendChild(newItem);
+    });
+
+    newDeleteBtn.addEventListener("click", evt=>{
+        elList.removeChild(newItem);
+        elAllCountResult.textContent=(arrTodos.length--)-1;
+        elUnComplateCountResult.textContent=arrTodos.length;
     })
 
     
